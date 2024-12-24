@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -13,8 +14,27 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Brand name</a>
-            <button class="btn btn-outline-secondary" id="toggle-dark-mode">Dark Mode</button>
+            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="vr h-100 mx-lg-2">
+                            <hr class="d-lg-none my-2">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn" id="toggle-dark-mode">
+                            <img id="dark-mode-icon" src="assets/moon-stars-fill.svg" alt="Dark Mode" width="16" height="16">
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -27,7 +47,7 @@
     </header>
 
     <!-- About Section -->
-    <section class="container py-5">
+    <section id="about" class="container py-5">
         <div class="row">
             <div class="col-md-6 fade-in">
                 <h2 class="fw-bold">About Me</h2>
@@ -42,7 +62,7 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="bg-light py-5">
+    <section id="portfolio" class="bg-light py-5">
         <div class="container">
             <h2 class="fw-bold text-center mb-4">Portfolio</h2>
             <div class="row">
