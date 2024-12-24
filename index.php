@@ -61,6 +61,7 @@ if (file_exists($lang_file)) {
         <div class="row">
             <div class="col-md-6 fade-in">
                 <h2 class="fw-bold"><?php echo $lang_strings['about']; ?></h2>
+                <hr>
                 <p class="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, necessitatibus perspiciatis harum ipsam explicabo veritatis maiores consequatur nostrum illo ut vero aliquam odit voluptate optio nisi corporis nulla saepe deserunt possimus commodi!
                 </p>
@@ -70,7 +71,7 @@ if (file_exists($lang_file)) {
             </div>
         </div>
     </section>
-
+    <hr>
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
@@ -79,7 +80,7 @@ if (file_exists($lang_file)) {
                 <div class="col-md-4 fade-in">
                     <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
                     <h5 class="fw-bold">Project 1</h5>
-                    <p class="text-muted">A brief description of this project.</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam mollitia sed dolores aperiam soluta neque nemo sit cupiditate voluptatem, nam minus, ea, alias ipsum iusto adipisci sequi quasi nostrum consequuntur. Quas!</p>
                 </div>
                 <div class="col-md-4 fade-in">
                     <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
@@ -94,7 +95,7 @@ if (file_exists($lang_file)) {
             </div>
         </div>
     </section>
-
+    <hr>
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
@@ -103,7 +104,7 @@ if (file_exists($lang_file)) {
                 <!-- Phone -->
                 <div class="col-md-3 mb-4">
                     <div class="p-4 shadow rounded">
-                        <i class="bi bi-telephone-fill fs-3 text-primary mb-3"></i>
+                        <img src="assets/telephone.svg"  width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Phone</h5>
                         <p class="m-0">+1 234 567 890</p>
                     </div>
@@ -111,7 +112,7 @@ if (file_exists($lang_file)) {
                 <!-- Email -->
                 <div class="col-md-3 mb-4">
                     <div class="p-4 shadow rounded">
-                        <i class="bi bi-envelope-fill fs-3 text-primary mb-3"></i>
+                        <img src="assets/envelope.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Email</h5>
                         <p class="m-0">example@example.com</p>
                     </div>
@@ -119,7 +120,7 @@ if (file_exists($lang_file)) {
                 <!-- Address -->
                 <div class="col-md-3 mb-4">
                     <div class="p-4 shadow rounded">
-                        <i class="bi bi-geo-alt-fill fs-3 text-primary mb-3"></i>
+                        <img src="assets/map.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Address</h5>
                         <p class="m-0">123 Street, City, Country</p>
                     </div>
