@@ -1,12 +1,12 @@
 <?php
-    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English
-    $lang_file = "lang/$lang.php";
-    
-    if (file_exists($lang_file)) {
-        include($lang_file);
-    } else {
-        include("lang/en.php");
-    }
+$lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English
+$lang_file = "lang/$lang.php";
+
+if (file_exists($lang_file)) {
+    include($lang_file);
+} else {
+    include("lang/en.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $lang; ?>">
@@ -33,16 +33,16 @@
                     <li class="nav-item"><a class="nav-link" href="#about"><?php echo $lang_strings['aboutNav']; ?></a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio"><?php echo $lang_strings['portfolioNav']; ?></a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact"><?php echo $lang_strings['contactNav']; ?></a></li>
-                    <li class="nav-item">
-                        <div class="vr h-100 mx-lg-2">
-                            <hr class="d-lg-none my-2">
-                        </div>
+                    <li class="nav-item d-none d-lg-block">
+                        <div id="navSeparator" class="vr h-100 mx-lg-2"></div>
                     </li>
                     <li class="nav-item">
-                        <button class="btn" id="toggle-dark-mode">
-                            <img id="dark-mode-icon" src="assets/moon-stars-fill.svg" alt="Dark Mode" width="16" height="16">
+                        <button class="btn d-flex align-items-center" id="toggle-dark-mode">
+                            <img id="dark-mode-icon" src="assets/moon-stars-fill.svg" alt="Dark Mode" width="16" height="16" class="me-2">
+                            <span id="dark-mode-text">Dark Mode</span>
                         </button>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -129,7 +129,7 @@
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/toggle.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
