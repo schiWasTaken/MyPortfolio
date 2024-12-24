@@ -1,5 +1,15 @@
+<?php
+    $lang = isset($_GET['lang']) ? $_GET['lang'] : 'en'; // Default to English
+    $lang_file = "lang/$lang.php";
+    
+    if (file_exists($lang_file)) {
+        include($lang_file);
+    } else {
+        include("lang/en.php");
+    }
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang; ?>">
 
 <head>
     <meta charset="UTF-8">
@@ -20,9 +30,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><?php echo $lang_strings['aboutNav']; ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio"><?php echo $lang_strings['portfolioNav']; ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><?php echo $lang_strings['contactNav']; ?></a></li>
                     <li class="nav-item">
                         <div class="vr h-100 mx-lg-2">
                             <hr class="d-lg-none my-2">
@@ -39,9 +49,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-light text-center py-5">
+    <header class="hero bg-light text-center py-5 text-white">
         <div class="container">
-            <h1 class="display-4 fw-bold fade-in">Hello, I'm [Your Name]</h1>
+            <h1 class="display-4 fw-bold fade-in"><?php echo $lang_strings['welcome']; ?></h1>
             <p class="lead fade-in">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
     </header>
@@ -50,7 +60,7 @@
     <section id="about" class="container py-5">
         <div class="row">
             <div class="col-md-6 fade-in">
-                <h2 class="fw-bold">About Me</h2>
+                <h2 class="fw-bold"><?php echo $lang_strings['about']; ?></h2>
                 <p class="text-muted">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, necessitatibus perspiciatis harum ipsam explicabo veritatis maiores consequatur nostrum illo ut vero aliquam odit voluptate optio nisi corporis nulla saepe deserunt possimus commodi!
                 </p>
@@ -62,9 +72,9 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="bg-light py-5">
+    <section id="portfolio" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4">Portfolio</h2>
+            <h2 class="fw-bold text-center mb-4"><?php echo $lang_strings['portfolio']; ?></h2>
             <div class="row">
                 <div class="col-md-4 fade-in">
                     <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
@@ -86,23 +96,36 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="container py-5">
-        <h2 class="fw-bold text-center mb-4">Contact Me</h2>
-        <form action="contact.php" method="post" class="fade-in">
-            <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4"><?php echo $lang_strings['contact']; ?></h2>
+            <div class="row text-center justify-content-center">
+                <!-- Phone -->
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 shadow rounded">
+                        <i class="bi bi-telephone-fill fs-3 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Phone</h5>
+                        <p class="m-0">+1 234 567 890</p>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 shadow rounded">
+                        <i class="bi bi-envelope-fill fs-3 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Email</h5>
+                        <p class="m-0">example@example.com</p>
+                    </div>
+                </div>
+                <!-- Address -->
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 shadow rounded">
+                        <i class="bi bi-geo-alt-fill fs-3 text-primary mb-3"></i>
+                        <h5 class="fw-bold">Address</h5>
+                        <p class="m-0">123 Street, City, Country</p>
+                    </div>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
     </section>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
