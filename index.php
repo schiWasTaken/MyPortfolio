@@ -54,7 +54,7 @@ if (file_exists($lang_file)) {
     <header class="hero bg-light text-center py-5 text-white">
         <div class="container">
             <h1 class="display-4 fw-bold fade-in"><?php echo $lang_strings['welcome']; ?></h1>
-            <p class="lead fade-in">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <p class="lead fade-in"><?php echo $lang_strings['welcomeSub']; ?></p>
         </div>
     </header>
 
@@ -65,7 +65,7 @@ if (file_exists($lang_file)) {
                 <h2 class="fw-bold"><?php echo $lang_strings['about']; ?></h2>
                 <hr>
                 <p class="text-muted">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, necessitatibus perspiciatis harum ipsam explicabo veritatis maiores consequatur nostrum illo ut vero aliquam odit voluptate optio nisi corporis nulla saepe deserunt possimus commodi!
+                    <?php echo $lang_strings['aboutText']; ?>
                 </p>
             </div>
             <div class="col-md-6 fade-in">
@@ -84,24 +84,24 @@ if (file_exists($lang_file)) {
                     <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <img src="assets/project1.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
-                    <h5 class="fw-bold">Project 1</h5>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam mollitia sed dolores.</p>
+                    <h5 class="fw-bold"><?php echo $lang_strings['project1']; ?></h5>
+                    <p class="text-muted"><?php echo $lang_strings['project1Text']; ?></p>
                 </div>
                 <!-- Portfolio Card 2 -->
                 <div class="col-md-4 fade-in">
                     <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                         <img src="assets/project2.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
-                    <h5 class="fw-bold">Project 2</h5>
-                    <p class="text-muted">Another brief description of this project.</p>
+                    <h5 class="fw-bold"><?php echo $lang_strings['project2']; ?></h5>
+                    <p class="text-muted"><?php echo $lang_strings['project2Text']; ?></p>
                 </div>
                 <!-- Portfolio Card 3 -->
                 <div class="col-md-4 fade-in">
                     <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                         <img src="assets/project3.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
-                    <h5 class="fw-bold">Project 3</h5>
-                    <p class="text-muted">Another brief description of this project.</p>
+                    <h5 class="fw-bold"><?php echo $lang_strings['project3']; ?></h5>
+                    <p class="text-muted"><?php echo $lang_strings['project3Text']; ?></p>
                 </div>
             </div>
         </div>
