@@ -15,6 +15,7 @@ if (file_exists($lang_file)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -24,7 +25,8 @@ if (file_exists($lang_file)) {
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Portfolio</a>
+            <svg id="BadTechLogo" data-name="BadTechLogo" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 708.07 848.81"><title>badtech</title><path d="M766.86,512a230.6,230.6,0,0,0,91-183.72c0-126.72-102-229.58-228.46-230.88v0H166.13v91.75H627a136.6,136.6,0,0,1,14.82.81A139.14,139.14,0,0,1,627,467.43c-3.85,0-7.69-.17-11.46-.49-3-.2-5.95-.53-8.86-1,.24.32.52.64.77,1,6.88,9.39,11.45,25.67,11.45,44.17,0,19.8-5.22,37.08-13,46.07-.29.33-.57.65-.85.93l-.25.25h0l-.1.12.12-.12a8.05,8.05,0,0,1,1-.17c2.71-.44,5.42-.76,8.21-1,4.26-.4,8.59-.61,13-.61a139.15,139.15,0,0,1,14.09,277.58h0a138,138,0,0,1-30.33-.24h-317v92.71H630.54v0l2.4-.05c124.78-3.15,224.94-105.26,224.94-230.81A230.6,230.6,0,0,0,766.86,512Z" transform="translate(-166.13 -97.38)"/><polygon points="511.22 183.99 0 183.99 0 277.62 128.03 277.62 128.03 640.44 221.65 640.44 221.65 277.62 511.22 277.62 511.22 183.99"/><path d="M606.05,465.2l-.24.61.85.12a.33.33,0,0,0-.17-.16A2.79,2.79,0,0,0,606.05,465.2Z" transform="translate(-166.13 -97.38)"/></svg>
+            <a class="navbar-brand fw-bold" href="#">BadTech</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

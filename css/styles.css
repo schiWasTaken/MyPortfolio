@@ -62,6 +62,10 @@ p {
     color: var(--navbar-text);
 }
 
+body.dark-mode #BadTechLogo {
+    fill: white;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
