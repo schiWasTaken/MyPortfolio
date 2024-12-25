@@ -79,23 +79,26 @@ if (file_exists($lang_file)) {
         <div class="container">
             <h2 class="fw-bold text-center mb-5"><?php echo $lang_strings['portfolio']; ?></h2>
             <div class="row">
+                <!-- Portfolio Card 1 -->
                 <div class="col-md-4 fade-in">
-                    <div class="rounded mb-3 card" style="height: 600px; overflow: hidden;">
+                    <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                         <img src="assets/project1.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold">Project 1</h5>
-                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam mollitia sed dolores aperiam soluta neque nemo sit cupiditate voluptatem, nam minus, ea, alias ipsum iusto adipisci sequi quasi nostrum consequuntur. Quas!</p>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam mollitia sed dolores.</p>
                 </div>
+                <!-- Portfolio Card 2 -->
                 <div class="col-md-4 fade-in">
-                    <div class="rounded mb-3 card" style="height: 600px;">
+                    <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                         <img src="assets/project2.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold">Project 2</h5>
                     <p class="text-muted">Another brief description of this project.</p>
                 </div>
+                <!-- Portfolio Card 3 -->
                 <div class="col-md-4 fade-in">
-                    <div class="rounded mb-3 card" style="height: 600px;">
-                        <img src="assets/project1-logo.png" class="img-fluid w-100 rounded-top" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div class="rounded mb-3 card portfolio-item" style="height: 600px;" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <img src="assets/project3.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold">Project 3</h5>
                     <p class="text-muted">Another brief description of this project.</p>
@@ -103,6 +106,41 @@ if (file_exists($lang_file)) {
             </div>
         </div>
     </section>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="assets/project1.png" class="d-block w-100" alt="Project 1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="assets/project2.png" class="d-block w-100" alt="Project 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img src="assets/project3.png" class="d-block w-100" alt="Project 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <hr>
     <!-- Contact Section -->
     <section id="contact" class="py-5">
