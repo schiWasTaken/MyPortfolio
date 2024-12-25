@@ -64,12 +64,14 @@ if (file_exists($lang_file)) {
             <div class="col-md-6 fade-in">
                 <h2 class="fw-bold"><?php echo $lang_strings['about']; ?></h2>
                 <hr>
-                <p class="text-muted">
+                <p>
                     <?php echo $lang_strings['aboutText']; ?>
                 </p>
             </div>
             <div class="col-md-6 fade-in">
-                <div class="bg-secondary rounded" style="height: 300px;"></div> <!-- Placeholder Image -->
+                <div class="rounded" style="height: 300px;">
+                    <img src="assets/about-image.jpg" class="rounded-top" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
             </div>
         </div>
     </section>
@@ -77,7 +79,7 @@ if (file_exists($lang_file)) {
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5"><?php echo $lang_strings['portfolio']; ?></h2>
+            <h2 class="fw-bold text-center mb-5 fade-in"><?php echo $lang_strings['portfolio']; ?></h2>
             <div class="row">
                 <!-- Portfolio Card 1 -->
                 <div class="col-md-4 fade-in">
@@ -85,7 +87,7 @@ if (file_exists($lang_file)) {
                         <img src="assets/project1.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold"><?php echo $lang_strings['project1']; ?></h5>
-                    <p class="text-muted"><?php echo $lang_strings['project1Text']; ?></p>
+                    <p><?php echo $lang_strings['project1Text']; ?></p>
                 </div>
                 <!-- Portfolio Card 2 -->
                 <div class="col-md-4 fade-in">
@@ -93,7 +95,7 @@ if (file_exists($lang_file)) {
                         <img src="assets/project2.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold"><?php echo $lang_strings['project2']; ?></h5>
-                    <p class="text-muted"><?php echo $lang_strings['project2Text']; ?></p>
+                    <p><?php echo $lang_strings['project2Text']; ?></p>
                 </div>
                 <!-- Portfolio Card 3 -->
                 <div class="col-md-4 fade-in">
@@ -101,7 +103,7 @@ if (file_exists($lang_file)) {
                         <img src="assets/project3.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <h5 class="fw-bold"><?php echo $lang_strings['project3']; ?></h5>
-                    <p class="text-muted"><?php echo $lang_strings['project3Text']; ?></p>
+                    <p><?php echo $lang_strings['project3Text']; ?></p>
                 </div>
             </div>
         </div>
@@ -145,10 +147,10 @@ if (file_exists($lang_file)) {
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5"><?php echo $lang_strings['contact']; ?></h2>
+            <h2 class="fw-bold text-center mb-5 fade-in"><?php echo $lang_strings['contact']; ?></h2>
             <div class="row text-center justify-content-center">
                 <!-- Phone -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 fade-in">
                     <div class="p-4 shadow rounded">
                         <img src="assets/telephone.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Phone</h5>
@@ -156,7 +158,7 @@ if (file_exists($lang_file)) {
                     </div>
                 </div>
                 <!-- Email -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 fade-in">
                     <div class="p-4 shadow rounded">
                         <img src="assets/envelope.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Email</h5>
@@ -164,7 +166,7 @@ if (file_exists($lang_file)) {
                     </div>
                 </div>
                 <!-- Address -->
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-4 fade-in">
                     <div class="p-4 shadow rounded">
                         <img src="assets/map.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Address</h5>

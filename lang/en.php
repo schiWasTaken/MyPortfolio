@@ -9,16 +9,21 @@
         'portfolio' => 'Portfolio',
         'project1' => 'MindBreak',
         'project1Text' => '
-        GitHub Repository: <a href="https://github.com/SCUMBAG0LEE/MindBreak">SCUMBAG0LEE/MindBreak</a>
-        Description: A mobile quiz game built using React.js, designed to engage users through interactive gameplay and stimulating challenges.
+        <span class="text-muted">GitHub Repository: </span><a href="https://github.com/SCUMBAG0LEE/MindBreak">SCUMBAG0LEE/MindBreak</a>
+        <br>
+        A mobile quiz game built using React.js, designed to engage users through interactive gameplay and stimulating challenges.
         ',
         'project2' => 'coffeeshop',
-        'project2Text' => 'GitHub Repository: <a href="https://github.com/schiWasTaken/coffeeshop">schiWasTaken/coffeeshop</a>
-        Description: A point based coffee shop website built with NodeJS.
+        'project2Text' => '
+        <span class="text-muted">GitHub Repository: </span><a href="https://github.com/schiWasTaken/coffeeshop">schiWasTaken/coffeeshop</a>
+        <br>
+        A point based coffee shop website built with NodeJS.
         ',
         'project3' => 'FF Laundry',
-        'project3Text' => 'GitHub Repository: <a href="https://github.com/schiWasTaken/FF_laundry">schiWasTaken/FF_laundry</a>
-        Description: Description: A laundry delivery service made more accessible, built with Laravel.
+        'project3Text' => '
+        <span class="text-muted">GitHub Repository: </span><a href="https://github.com/schiWasTaken/FF_laundry">schiWasTaken/FF_laundry</a>
+        <br>
+        A laundry delivery service made more accessible, built with Laravel.
         ',
         'contactNav' => 'Contact',
         'contact' => 'Contact Me',
