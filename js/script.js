@@ -17,8 +17,9 @@ document.getElementById('toggle-dark-mode').addEventListener('click', () => {
 });
 
 
-// Fade-in Effect
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Fade-in Effect
     const elements = document.querySelectorAll('.fade-in');
     elements.forEach((el) => {
         const observer = new IntersectionObserver((entries) => {
@@ -30,4 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         observer.observe(el);
     });
+
+    // Navbar Scroll Up
+    const navbar = document.querySelector(".navbar");
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add("hidden");
+            } else {
+                navbar.classList.remove("hidden");
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+        });
 });

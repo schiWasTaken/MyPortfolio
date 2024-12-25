@@ -29,20 +29,22 @@ if (file_exists($lang_file)) {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about"><?php echo $lang_strings['aboutNav']; ?></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio"><?php echo $lang_strings['portfolioNav']; ?></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact"><?php echo $lang_strings['contactNav']; ?></a></li>
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item d-none d-lg-block">
                         <div id="navSeparator" class="vr h-100 mx-lg-2"></div>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><?php echo $lang_strings['aboutNav']; ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio"><?php echo $lang_strings['portfolioNav']; ?></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><?php echo $lang_strings['contactNav']; ?></a></li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
                         <button class="btn d-flex align-items-center" id="toggle-dark-mode">
                             <img id="dark-mode-icon" src="assets/moon-stars-fill.svg" alt="Dark Mode" width="16" height="16" class="me-2">
                             <span id="dark-mode-text">Dark Mode</span>
                         </button>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -104,7 +106,7 @@ if (file_exists($lang_file)) {
                 <!-- Phone -->
                 <div class="col-md-3 mb-4">
                     <div class="p-4 shadow rounded">
-                        <img src="assets/telephone.svg"  width="32" height="32" class="mb-3">
+                        <img src="assets/telephone.svg" width="32" height="32" class="mb-3">
                         <h5 class="fw-bold">Phone</h5>
                         <p class="m-0">+1 234 567 890</p>
                     </div>
