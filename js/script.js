@@ -16,8 +16,6 @@ document.getElementById('toggle-dark-mode').addEventListener('click', () => {
     }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Fade-in Effect
     const elements = document.querySelectorAll('.fade-in');

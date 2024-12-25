@@ -77,20 +77,26 @@ if (file_exists($lang_file)) {
     <!-- Portfolio Section -->
     <section id="portfolio" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4"><?php echo $lang_strings['portfolio']; ?></h2>
+            <h2 class="fw-bold text-center mb-5"><?php echo $lang_strings['portfolio']; ?></h2>
             <div class="row">
                 <div class="col-md-4 fade-in">
-                    <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
+                    <div class="rounded mb-3 card" style="height: 600px; overflow: hidden;">
+                        <img src="assets/project1.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                     <h5 class="fw-bold">Project 1</h5>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima veniam mollitia sed dolores aperiam soluta neque nemo sit cupiditate voluptatem, nam minus, ea, alias ipsum iusto adipisci sequi quasi nostrum consequuntur. Quas!</p>
                 </div>
                 <div class="col-md-4 fade-in">
-                    <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
+                    <div class="rounded mb-3 card" style="height: 600px;">
+                        <img src="assets/project2.png" class="rounded-top" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                     <h5 class="fw-bold">Project 2</h5>
                     <p class="text-muted">Another brief description of this project.</p>
                 </div>
                 <div class="col-md-4 fade-in">
-                    <div class="bg-secondary rounded mb-3" style="height: 200px;"></div>
+                    <div class="rounded mb-3 card" style="height: 600px;">
+                        <img src="assets/project1-logo.png" class="img-fluid w-100 rounded-top" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
                     <h5 class="fw-bold">Project 3</h5>
                     <p class="text-muted">Another brief description of this project.</p>
                 </div>
@@ -101,7 +107,7 @@ if (file_exists($lang_file)) {
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4"><?php echo $lang_strings['contact']; ?></h2>
+            <h2 class="fw-bold text-center mb-5"><?php echo $lang_strings['contact']; ?></h2>
             <div class="row text-center justify-content-center">
                 <!-- Phone -->
                 <div class="col-md-3 mb-4">
